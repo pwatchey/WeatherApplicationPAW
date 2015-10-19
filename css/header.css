@@ -1,0 +1,259 @@
+
+
+
+
+
+body {
+	font-family: Arial, Verdana, sans-serif;
+	background:url(../images/autumn_4.jpg);
+	background-size: 100% auto; 
+	
+	}
+	
+div.row {
+	 /*display: inline-box; */ 
+	
+	
+}
+	
+div#tempBox {
+	
+	display: inline-block; 
+	border: 3px solid black; 
+	width: 200px; 
+	background-color: #cbabef;
+	margin-right: 120px; 
+	margin-left: 230px; 
+	margin-bottom: 30px; 
+	margin-top: 30px; 
+	 
+}
+
+div#iconBox {
+ 
+	display: inline-block; 
+	border: 3px solid black; 
+	width: 200px; 
+	background-color: #cbabef;
+	margin-left: px; 
+}
+
+div#colorBox {
+	
+	display: inline-block; 
+	border: 3px solid black; 
+	width: 200px; 
+	background-color: #cbabef;
+	margin-left: 120px; 
+	margin-right: 70px; 
+	margin-bottom: 30px; 
+	margin-top: 30px; 	
+}
+
+img#sunrise {
+	
+	max-height: 100px;
+	max-width:	50px; 
+	
+}
+img#sunset {
+	
+	max-height: 100px; 
+	max-width: 50px; 
+	
+	
+}
+
+div#cityBox {
+	
+	border: 3px solid black; 
+	width: 200px; 
+	background-color: #cbabef; 
+	padding: 10px 10px 10px;
+	padding-left: 10px; 
+	margin-bottom: 40px; 
+	margin-top: 60px; 
+	margin-left: auto; 
+	margin-right: auto; 
+}
+div#descriptionBox {
+	
+	
+	border: 3px solid black; 
+	width: 200px; 
+	background-color: #cbabef;
+	margin-left: auto;  
+	margin-right: auto; 
+	margin-bottom: 30px; 
+	margin-top: 30px; 
+	padding: 10px 10px 10px; 
+	padding: 10px; 
+	width: 850px; 
+	height: 600px; 
+	
+	
+	
+}
+h1#description {
+	
+	text-align: center; 
+	
+	
+	
+	
+}
+
+
+h4#sunrise {
+	font-family: 'Oswald', sans-serif;
+	text-color: red; 
+	
+	
+	
+}
+div#sunriseBox {
+	
+display: inline-block;
+    width: 450px;
+    height: 75px;
+    margin-top: 60px;
+	margin-bottom: 60px; 
+	margin-left: 200px; 
+	margin-right: 60px; 
+    border: 3px solid #c1ffc1; 
+	background-color: #ababef; 
+
+/*border: 3px solid black; 
+	width: 200px; 
+	background-color: #111111;
+	margin-left: 25px; 
+	position: left; */
+	
+}
+
+
+h4#sunset {
+	
+	
+	
+}
+
+div#sunsetBox {
+	
+	
+	display: inline-block;
+    width: 450px;
+    height: 75px;
+    margin: 60px;
+	margin-right: -30px; 
+	margin-left: -30px; 
+    border: 3px solid #c1ffc1;
+	background-color: #ababef; 
+	/*border: 3px solid black; 
+	width: 200px; 
+	background-color: #111111;
+	margin-left: 25px; */
+}
+/*#backgroundImage {
+	opacity: 0.4; 
+	 filter: alpha(opacity=40);
+}
+
+h1#city {
+	color: #c62104;
+	text-shadow: 1px 1px 0px #111111;
+	
+}
+
+h1 {
+	font-family: 'Oswald', sans-serif;
+	margin-left: 0px; 
+	margin-right: 0px; 
+	margin-bottom: 0px; 
+	margin-top: 0px;
+	}
+div.row{
+		
+	 margin: 30px;
+	 background-color: #ffffff;
+     border: 1px solid black;
+     opacity: 0.6;
+     filter: alpha(opacity=90);
+	text-align: center; 
+	width: 620px; 
+	padding: 0px; 
+	margin: 20px auto 20px auto; 
+	border-radius: 10px; 
+	-moz-border-radius: 10px; 
+	opacity: 2.5; 
+}	
+
+h4#currentTime { 
+	font-family: 'Oswald', sans-serif; 
+	text-shadow: 3.5px 3.5px 1px #a79261; 
+	margin-bottom: 0px; 
+	margin-right: 0px; 
+	margin-left: 0px; 
+	margin-top: 0px; 
+	
+	
+}
+
+div.currentTime {
+	padding: 10px; 
+	width: 100px;  
+	border-radius: 100px; 
+	-moz-border-radius: 100px; 
+	-webkit-border-radius: 100px; 
+	position: relative; 
+	top: 0px; 
+	left: 100px; 
+	position: relative;
+	-moz-box-shadow: 0 0 10px #777777;
+	-webkit-box-shadow: 0 0 10px #777777;
+	box-shadow: 0 0 10px #7777777;
+
+	
+}
+
+h4#currentWeather {
+		font-family: 'Oswald', sans-serif; 
+	text-shadow: 3.5px 3.5px 1px #a79261; 
+	margin-bottom: 0px; 
+	margin-right: 0px; 
+	margin-left: 0px; 
+	margin-top: 0px; 
+	
+	
+}
+
+div.currentWeather {
+	padding: 10px; 
+	width: 130px;  
+	border-radius: 100px; 
+	-moz-border-radius: 100px; 
+	-webkit-border-radius: 100px; 
+	position: relative; 
+	top: 0px; 
+	-moz-box-shadow: 0 0 10px #777777;
+	-webkit-box-shadow: 0 0 10px #777777;
+	box-shadow: 0 0 10px #7777777;
+
+	
+	
+}
+
+div.descriptionWeather {
+	
+		margin: 20px auto 20px auto; 
+		
+	
+}
+
+h1#descriptionWeather {  */ 
+	
+	
+	
+
+
+

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>PAW Weather Application</title>
+	<link href="css/header.css" type="text/css" rel="stylesheet"/>
+	<link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+	<src id="backgroundImage"image="../images/autumn_4.jpg"/>
+</head>
+<body>
+
+<div class="container">
+    <div id="cityBox" class="row">
+        <div class="col-sm-offset-2 col-sm-6"></div>
+		<h1 id="city">ALTOONA, PA</h1>
+    </div>
+	<div>
+		<button id="button">UPDATE WEATHER</button>
+	</div>
+    <div id="tempBox" class="row">
+        <div class="col-sm-offset-1 col-sm-2"><h4 id="currentTemp">CURRENT TEMPERATURE</h4></div>
+	</div>
+	<div id="iconBox" class="row">
+        <div class="col-sm-offset-1 col-sm-2"><h4 id="icon">WEATHER ICON</h4></div>
+	</div>
+	<div id="colorBox" class="row">
+        <div class="col-sm-offset-1 col-sm-2"><h4 id="colorSquare">COLOR SQUARE</h4></div>
+    </div>
+    <div id="descriptionBox" class="row">
+        <div class="col-sm-10"><h1 id="description">WEATHER DESCRIPTION</h1></div>
+	</div>
+	<div id="sunriseBox" class="row">
+		<img src="images/Sunrise1.jpg" id="sunrise" alt="" />
+        <div class="col-sm-2"><h4 id="sunrise"></h4 id="sunrise">SUNRISE TIME</div>
+	</div>
+	<div id="sunsetBox" class="row">
+		<img src="images/Sunset_1.jpg" id="sunset" alt="" />
+        <div class="col-sm-offset-6 col-sm-2"><h4 id="sunset">SUNSET TIME</h4></div>
+    </div>
+</div>
+
+<script src="../javascript/dynamic.js"></script> 
+<script>
+		
+		document.getElementById("button").onclick = function() {
+			var request = new XMLHttpRequest(); 
+			request.open("GET", "" , true); 
+			
+			repeat,onload function() {
+				var responseJSONData = JSON.parse(request.responseText); 
+				document.getElementById("temp").innerHTML = responseJSONData.main.temp;
+			
+			}
+			request.onerror = function() {
+				console.log("Connection Error"); 
+			
+			
+			}
+			request.send(); 
+		}
+		
+	</script>
+
+	<!--<div class="background">
+		<div class="transparentBox">
+			
+		</div>
+	</div>
+	<div class="currentTime">
+		<h4 id="currentTime">Current Time</h4>
+	</div>
+	
+	<div class="currentWeather">
+		<h4 id="currentWeather">Current Weather</h4>
+	</div>
+		
+	<div id="weatherColor">
+		<h4 id="weatherColor">Weather Color</h4>
+	</div>
+	
+	<div id="descriptionWeather">
+		<h1 id="descriptionWeather">Weather Forecast</h1>
+	</div>
+	<div>
+	</div>-->
+	</body>
+</html>
